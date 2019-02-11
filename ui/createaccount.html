@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meal Booking#create account</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+	<div class="contain signup-img pad-b pad">
+		<form action="" class="signup" method="POST" enctype="multipart/form-data" name="createaccount"> 
+			<div> 
+				<h3> <img src="images/talia.jpg" alt="logo" width="80" height="50">Talia's kitchen -Book a meal </h3>
+				<h4>Sign up to get started</h4>
+			</div>
+			<div>
+				<label for='email'> Email</label>
+				<input type="email" name="email" class='form-control' id='email'> 
+			</div>
+			<div>
+				<label for='Phone No'> Phone No</label>
+				<input type="text" name="phoneno" class='form-control' id='phoneno'> 
+			</div>
+			<div >
+				<label for='username'> UserName</label>
+				<input type="text" name="username" class='form-control' id='username'> 
+			</div>
+			<div>
+				<label for ='pwrd' > Password</label>
+				<input type="password"class='form-control' id="pwrd">  &nbsp; &nbsp;
+				<input type="checkbox" onclick="showpassword('pwrd')">Show/Hide
+			</div>
+			<div>
+				<label for ='re-pwrd' > Re-Password</label>
+				<input type="password"class='form-control' id="re-pwrd"> &nbsp; &nbsp;
+				<input type="checkbox" onclick="showpassword('re-pwrd')">Show/Hide
+			</div>
+			<div>
+				<button type="submit" class="button">Submit</button>
+			</div>
+	</form>
+</div>
+
+
+</body>
+</html>

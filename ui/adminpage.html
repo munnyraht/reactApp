@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meal Booking app#Index
+	</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top pr-5">
+                <a href="#" class="navbar-brand"><img src="images/talia.jpg" alt="logo" width="80" height="50">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                     <span  style = 'color:white' class="navbar-toggler-icon"></span>
+                   </button>
+                <div class="collapse navbar-collapse" id="navbarNav"> 
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item pr-2"> <a href="index.php" class="nav-link text-white">Home <span class="sr-only">(current)</span></a> </li>
+                        <li class="nav-item  pr-2"> <a href="about.php" class="nav-link text-white">About Us</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+
+     <div class="pad admin-img"> 
+      <h3>Welcome caterer !</h3>
+      <div class="pad">
+        <button class="buttn" onclick="displaymenu('set-menu')">Set Menu/Manage Menu</button>
+      </div>
+      <div id="set-menu">
+        <form name="set-menu" class="pad-l menu-form" >
+          <h3>Chinese</h3>
+          <input type="checkbox" name="Chinese Rice" id="chineserice"><label for="chineserice">Chinese Rice</label>
+          <input type="text" name="amt" placeholder="set amount.."><br>
+          <input type="checkbox" name="Chinese Rice" id="brownsoup"><label for="brownsoup">Chinese Brown Soup</label>
+          <input type="text" name="amt" placeholder="set amount.."> <br>
+          <input type="checkbox" name="ChineseRicewithcurrysauce" id="ChineseRicewithcurrysauce"><label for="ChineseRicewithcurrysauce">Chinese Rice with curry sauce</label>
+          <input type="text" name="amt" placeholder="set amount.."> <br>
+          <button class="button">Manage to chinese Menu</button>
+          <h3>Regular</h3>
+          <input type="checkbox" name="FriedRice" id="FriedRice"><label for="FriedRice">Fried Rice</label>
+          <input type="text" name="amt" placeholder="set amount.."><br>
+          <input type="checkbox" name="Moimoi" id="Moimoi"><label for="Moimoi">Moi Moi</label>
+          <input type="text" name="amt" placeholder="set amount.."> <br>
+          <input type="checkbox" name="Spag" id="Spag"><label for="Spag">Spagetti</label>
+          <input type="text" name="amt" placeholder="set amount..">
+          <br>
+          <button class="button">Manage to Regular Menu</button>
+          <h3>Roasts</h3>
+          <input type="checkbox" name="shrimps" id="shrimps"><label for="shrimps">Shrimps</label>
+          <input type="text" name="amt" placeholder="set amount.."><br>
+          <input type="checkbox" name="Wholechicken" id="Wholechicken"><label for="Wholechicken">Whole chicken</label>
+          <input type="text" name="amt" placeholder="set amount.."> <br>
+          <input type="checkbox" name="GrilledFish" id="GrilledFish"><label for="GrilledFish">Grilled Fish</label>
+          <input type="text" name="amt" placeholder="set amount.."><br>
+          <button class="button">Manage to Roasts Menu</button>
+        </form>
+        
+
+      </div>
+      <div class="pad">
+        <button class="buttn" onclick="displaymenu('get-menu')">Get Menu</button>
+      </div>
+      <div id="get-menu">
+        <form name="get-menu" class="pad-l menu-form" >
+          <label><h4>Get date</h4></label><br>
+          <input type="date" name=""><br><br>
+          <button class="button">Go</button>
+        </form>
+      </div>
+      <div class="pad">
+        <button class="buttn" onclick="displaymenu('order-summary')">Order Summary/Amounts made</button>
+      </div>
+      <div id="order-summary">
+        <form name="get-menu" class="pad-l menu-form" >
+          <label><h4>Enter date</h4></label><br>
+          <input type="date" name=""><br><br>
+          <button class="button">Go</button>
+        </form>
+      </div>
+      <div class="pad">
+        <button class="buttn">Details for all order</button>
+      </div>
+     </div>
+
+
+
+     <footer class="p-5 bg-gray">
+<div class="row">
+      <div class="col-md-4" >
+          <hr class="light">
+          <h5 class="pl-5"> Contact Us </h5> 
+          <hr class="light">
+          <div class="pl-5">
+          <p> +234-816-047-177</p>
+          <p> talia_kitchen@gmail.com</p>
+          <p>  Unity mall,Lekki phase one</p>
+          <p> Lekki, Lagos state</p>
+      </div></div>
+      <div class="col-md-4" >
+          <hr class="light">
+          <h5 class="pl-5"> Our Hours</h5>
+          <hr class="light">
+          <div class="pl-5">
+            <p> Monday: 9am-10pm</p>
+          <p>Saturdays: 9am-11pm</p>
+          <p> Sunday: closed</p>
+        </div>
+          
+      </div>
+  <div class="col-md-4">
+      <hr class="light">
+    <h5 class="pl-5"> Restaurant</h5> 
+    <hr class="light">
+    <div class="pl-5">
+      <p> <a href="restaurantlogin.php">Restaurant Log in</a> </p>
+      <div> <img src="images/talia.jpg" width="100" height='80' alt="logo"> </div>
+    </div>
+</div>
+</div>
+<div class="row">
+  <div class="col-12">
+      <hr class="light-100">
+  </div>
+</div>
+  <div class="row pl-4">
+    <div class="col-md-3 p-1">
+      <a href="#">Terms and Conditon</a>
+    </div>
+    <div class="col-md-3 p-1">
+      <a href="#">Return Policy</a>
+    </div>
+    <div class="col-md-3 p-1">
+      <a href="#">Copyright@2018</a>
+    </div>
+    <div class="col-md-3 col-sm-12 p-1" >
+        <a href="#" class="p-2"><i class="fab fa-twitter fa-2x border border-light rounded-circle p-2"></i></a>
+        <a href="#" class="p-2"><i class="fab fa-facebook fa-2x border border-light rounded-circle p-2"></i></a>
+        <a href="#" class="p-2"><i class="fab fa-instagram fa-2x border border-light rounded-circle p-2"></i></a>
+        <a href="#" class="p-2"> <i class="fab fa-linkedin-in fa-2x border border-light rounded-circle p-2"></i></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
